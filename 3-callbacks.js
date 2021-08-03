@@ -11,11 +11,10 @@ function apologize() {
 }
 
 // the `loggingFunction` is our callback function.
-function greeter(loggingFunction) {
+function greeter(loggingFuntion) {
     const names = ["John", "Sarah", "Peter", "Laura"];
     const randomName = names[Math.floor(Math.random() * names.length)];
-
-    loggingFunction(randomName);
+    loggingFuntion(randomName);
 }
 
 // in this context, `sayHello` is a callback function, because `greeter` will "call it back when it's finished".

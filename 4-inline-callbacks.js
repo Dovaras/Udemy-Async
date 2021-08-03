@@ -22,7 +22,7 @@ function greeter(loggingFunction) {
 // These are all examples of callback functions:
 
 // traditional syntax (anonymous)
-greeter(function() {console.log(`Hello, ${ name }, I'm anonymous!`)})
+greeter(function() {console.log(`Hello, I'm anonymous!`)})
 // named function
 greeter(sayHello)
 // arrow notation (anonymous, inline)
