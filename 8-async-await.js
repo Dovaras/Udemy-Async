@@ -1,9 +1,13 @@
-const axios = require("axios");
+const axios = require("./node_modules/axios");
 
 
 // async / await. The wonderful syntax for asynchronous code which makes it look synchronous.
 
-(async () => {
-    const response = await axios.get("https://randomuser.me/api");
-    console.log(response.data.results[0].name.first)
-})()
+// axios.get("http://ip-api.com/json").then((response) => {
+//     console.log("lat:" + response.data.lat, "lon:" + response.data.lon);
+// });
+
+	(async () => {
+        const response = await axios.get("http://ip-api.com/json");
+		console.log("lat:" + response.data.lat, "lon:" + response.data.lon)
+	})()

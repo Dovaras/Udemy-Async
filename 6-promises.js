@@ -11,8 +11,9 @@ const axios = require("axios"); // Axios is my favourite library, and it's easy 
  * what is this `.get(...)`? .get() refers to the HTTP method, we will see on Lecture 23 
  * @file 18-request-methods.js
  */
-axios.get("https://randomuser.me/appi").then((response) => {
+axios.get("https://randomuser.me/api").then((response) => {
     console.log(response.data.results[0].email);
 }).catch((error) => {
     console.log("GOTCHA! ", error);
 })
+

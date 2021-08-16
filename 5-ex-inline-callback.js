@@ -3,20 +3,12 @@ const double = (a, logger) => {
     const doubleOfA = a * 2;
     logger(a, doubleOfA);
 }
-
-double(3, (input, result) => {
-    console.log(`The double of ${input} is ${result}`);
-});
+double (3, console.log);
 */
-const multiply = (a, b, logger) => {
-    ab = a * b;
-    logger(a, b, ab);
-}
-const logger = (a, b, ab) => console.log(`The result of multiplying ${a} and ${b} is ${ab}`);
 
-let ab = 0;
-
-multiply(3, 4);
+const multiply = (a, b, logger) => logger(a, b, a * b);
+multiply (3, 4, (input1, input2, result) =>
+    console.log(`The multiply ${input1} of ${input2} is ${result}`));
 
 ///////////////////////////////////////
 
