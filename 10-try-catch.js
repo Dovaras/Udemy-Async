@@ -1,15 +1,26 @@
 const axios = require("axios");
+// ???????????????????????????????????????????????????????????
+// (async () => {
+// try {
+//   axios.get("https://randomuser.me/api").then((response) => {
+//   console.log(response.data.results[0].email);
+// })} catch(err) {
+//     console.error("GOTCHA! ", err);
+// }})()
 
-// axios.get("https://randomuser.me/api").then((response) => {
-//     console.log(response.data.resssssssults[0].email);
-// }).catch((error) => {
-//     console.log("GOTCHA! ", error);
-// })
+(async () => {
+  try {
+    const response = await axios.get("https://randomuser.me/api");
+    console.log(response.data.results[0].email)
+  } catch (err) {
+    console.error("GOTCHA!", err)
+  }
+  })()
 
-try {
-  axios.get("https://randomuser.me/api").then((response) => {
-    console.log(response.data.resssssssults[0].email);
-  });
-} catch (error) {
-  console.log("GOTCHA! ", error);
-}
+// try {
+//   axios.get("https://randomuser.me/api").then((response) => {
+//     console.log(response.data.results[0].email);
+//   });
+// } catch (err) {
+//   console.error("GOTCHA! ", err);
+// }
